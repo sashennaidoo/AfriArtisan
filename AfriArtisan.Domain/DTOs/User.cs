@@ -10,6 +10,6 @@ namespace AfriArtisan.Domain.DTOs
     {
         public int UserCode { get; set; }
         public string EmailAddress { get; set; }
-        public 
+        public string Test { get; set; }
     }
 }
