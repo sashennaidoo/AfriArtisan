@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AfriArtisan.Service.Builders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,9 @@ namespace AFriArtisan.Web.Controllers
     {
         public ActionResult Index()
         {
+            //new ProductTypeBuilder().AddProductType("Bracelet", true);
+            var prodTypes = new ProductTypeBuilder().GetAllProductTypes();
+            var prods = new ProductBuilder().GetProductByType(1);
             return View();
         }
 
