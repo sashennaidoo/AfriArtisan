@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Builders\ProductBuilder.cs" />
     <Compile Include="Builders\ProductTypeBuilder.cs" />
+    <Compile Include="Builders\UserBuildercs.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
