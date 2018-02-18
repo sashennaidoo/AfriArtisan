@@ -57,6 +57,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="MariaDbInitializer.cs" />
     <Compile Include="Models\TM_PRD_Product.cs" />
+    <Compile Include="Models\TM_USR_User.cs" />
     <Compile Include="Models\TR_PDT_Product_Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
