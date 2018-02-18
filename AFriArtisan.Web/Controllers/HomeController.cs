@@ -26,7 +26,7 @@ namespace AFriArtisan.Web.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Should you have any queries, feel free to contact us.";
 
             return View();
         }
