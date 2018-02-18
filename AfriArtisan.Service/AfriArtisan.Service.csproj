@@ -79,6 +79,10 @@
       <Project>{24cd02ba-59bb-4626-a583-de54c22da948}</Project>
       <Name>AfriArtisan.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AfriArtisan.Utility\AfriArtisan.Utility.csproj">
+      <Project>{acdf5aa2-6706-42df-8500-08ca4037251f}</Project>
+      <Name>AfriArtisan.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

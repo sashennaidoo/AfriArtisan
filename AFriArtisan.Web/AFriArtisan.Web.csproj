@@ -262,6 +262,10 @@
     <Content Include="img\3-506x195_t.jpg" />
     <Content Include="img\4-506x195_t.jpg" />
     <Content Include="img\7-506x195_t.jpg" />
+    <Content Include="img\banner\Banner 01.png" />
+    <Content Include="img\banner\Banner 02.png" />
+    <Content Include="img\banner\Banner 03.png" />
+    <Content Include="img\banner\Banner 04.png" />
     <Content Include="img\Brand1.png" />
     <Content Include="img\Brand2.png" />
     <Content Include="img\Brand3.png" />
@@ -276,6 +280,12 @@
     <Content Include="img\main11.jpg" />
     <Content Include="img\main2.jpg" />
     <Content Include="img\preview_referral.png" />
+    <Content Include="img\svg\ball-triangle.svg" />
+    <Content Include="img\svg\circles.svg" />
+    <Content Include="img\svg\double-tail-spin.svg" />
+    <Content Include="img\svg\oval.svg" />
+    <Content Include="img\svg\spin.svg" />
+    <Content Include="img\svg\tail-spin.svg" />
     <Content Include="img\user1-60x60_left.png" />
     <Content Include="img\user2-60x60_left.png" />
     <Content Include="img\user3-60x60_left.png" />
@@ -334,6 +344,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\jquery.yith-wcwl.js" />
     <Content Include="Scripts\js.cookie.min.js" />
+    <Content Include="Scripts\jssor.slider.min.js" />
     <Content Include="Scripts\linkid.js" />
     <Content Include="Scripts\megnor.min.js" />
     <Content Include="Scripts\megnorloadmore.js" />
@@ -369,12 +380,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Shop.cshtml" />
+    <Content Include="Views\User\SignIn.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Shop\" />
-    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

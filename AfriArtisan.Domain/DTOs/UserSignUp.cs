@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace AfriArtisan.Domain.DTOs
 {
-    public class User
+    public class UserSignUp
     {
-        public int UserCode { get; set; }
         public string EmailAddress { get; set; }
-        public string FirsName { get; set; }
+        public string Password { get; set; }
+        public string FirstName { get; set; }
         public string Surname { get; set; }
-        public DateTime LastLoginDate { get; set; }
-        public DateTime DateModified { get; set; }
-        //public 
     }
 }

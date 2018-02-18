@@ -17,5 +17,6 @@ namespace AfriArtisan.Domain.DTOs
         public decimal Cost { get; set; }
         public string Weight { get; set; }
         public DateTime DateAdded { get; set; }
+        public List<ProductImage> ProductImages { get; set; }
     }
 }

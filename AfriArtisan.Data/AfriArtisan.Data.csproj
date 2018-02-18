@@ -55,8 +55,10 @@
   <ItemGroup>
     <Compile Include="AfriArtisan_Store_Context.cs" />
     <Compile Include="MariaDbInitializer.cs" />
+    <Compile Include="Models\TA_PIL_Product_Image_Location.cs" />
     <Compile Include="Models\TM_PRD_Product.cs" />
     <Compile Include="Models\TM_USR_User.cs" />
+    <Compile Include="Models\TR_IMT_Image_Type.cs" />
     <Compile Include="Models\TR_PDT_Product_Type.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

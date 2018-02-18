@@ -1,6 +1,7 @@
 ﻿using AfriArtisan.Data;
 using AfriArtisan.Data.Models;
 using AfriArtisan.Domain.DTOs;
+using AfriArtisan.Domain.Enums;
 using AutoMapper;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,13 @@ namespace AfriArtisan.Service.Builders
 {
     public class ProductBuilder
     {
+        #region Private Members
+
         private AfriArtisan_Store_Context _context;
+
+        #endregion Private Members
+
+        #region CTOR
 
         public ProductBuilder()
         {
@@ -31,11 +38,52 @@ namespace AfriArtisan.Service.Builders
             _context = new AfriArtisan_Store_Context();
         }
 
+        #endregion CTOR
+
+        #region GetProducts
+
+        public List<Product> GetAllProducts()
+        {
+            var productList = new List<Product>();
+            var products = Mapper.Map<List<Product>>(_context.Products.ToList());
+
+            foreach (var prod in products)
+            {
+                prod.ProductImages.AddRange(AddImages(prod));
+                productList.Add(prod);
+            }
+            return productList;
+        }
+
         public List<Product> GetProductByType(int productType)
         {
             var productList = new List<Product>();
             var products = Mapper.Map<List<Product>>(_context.Products.Where(c => c.pdt_code == productType));
-            return products;
+            
+            foreach(var prod in products)
+            {
+                prod.ProductImages.AddRange(AddImages(prod));
+                productList.Add(prod);
+            }
+            return productList;
         }
+
+        public List<ProductImage> AddImages(Product product)
+        {
+            var productImages = new List<ProductImage>();
+            var images = _context.ProductImage.Where(c => c.prd_code == product.Code).ToList();
+            if (images != null)
+            {
+                foreach (var img in images)
+                    productImages.Add(new ProductImage
+                    {
+                        ImageLocation = img.pil_image_location,
+                        ImageType = (ImageType)img.imt_code
+                    });
+            }
+            return productImages;
+        }
+
+        #endregion GetProducts
     }
 }

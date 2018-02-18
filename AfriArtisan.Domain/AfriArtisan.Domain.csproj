@@ -41,10 +41,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\Product.cs" />
+    <Compile Include="DTOs\ProductImage.cs" />
     <Compile Include="DTOs\ProductType.cs" />
     <Compile Include="DTOs\ShopItem.cs" />
     <Compile Include="DTOs\ShoppingCart.cs" />
+    <Compile Include="DTOs\SignIn.cs" />
     <Compile Include="DTOs\User.cs" />
+    <Compile Include="DTOs\UserSignUp.cs" />
+    <Compile Include="Enums\ImageType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
