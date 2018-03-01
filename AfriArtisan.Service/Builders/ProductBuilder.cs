@@ -27,10 +27,11 @@ namespace AfriArtisan.Service.Builders
             Mapper.Initialize(cfg => cfg.CreateMap<TM_PRD_Product, Product>()
             .ForMember(dest => dest.Code, opts => opts.MapFrom(src => src.prd_code))
             .ForMember(dest => dest.ProductType, opts => opts.MapFrom(src => src.pdt_code))
-            .ForMember(dest => dest.Colour, opts => opts.MapFrom(src => src.prd_color))
+            .ForMember(dest => dest.Colour, opts => opts.MapFrom(src => src.prd_colour))
             .ForMember(dest => dest.Cost, opts => opts.MapFrom(src => src.prd_cost))
             .ForMember(dest => dest.DateAdded, opts => opts.MapFrom(src => src.prd_date_added))
             .ForMember(dest => dest.Dimensions, opts => opts.MapFrom(src => src.prd_dimensions))
+            .ForMember(dest => dest.Description, opts => opts.MapFrom(src => src.prd_item_description))
             .ForMember(dest => dest.ItemNumber, opts => opts.MapFrom(src => src.prd_item_number))
             .ForMember(dest => dest.Weight, opts => opts.MapFrom(src => src.prd_weight))
             
@@ -49,6 +50,7 @@ namespace AfriArtisan.Service.Builders
 
             foreach (var prod in products)
             {
+                prod.ProductImages = new List<ProductImage>();
                 prod.ProductImages.AddRange(AddImages(prod));
                 productList.Add(prod);
             }
@@ -62,6 +64,7 @@ namespace AfriArtisan.Service.Builders
             
             foreach(var prod in products)
             {
+                prod.ProductImages = new List<ProductImage>();
                 prod.ProductImages.AddRange(AddImages(prod));
                 productList.Add(prod);
             }

@@ -20,7 +20,7 @@ namespace AfriArtisan.Data.Models
         public string prd_item_number { get; set; }
         public string prd_item_description { get; set; }
         public string prd_dimensions { get; set; }
-        public string prd_color { get; set; }
+        public string prd_colour { get; set; }
         public decimal prd_cost { get; set; }
         public string prd_weight { get; set; }
         public DateTime prd_date_added { get; set; }

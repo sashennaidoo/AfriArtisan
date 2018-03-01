@@ -172,7 +172,7 @@
 	list-style: none outside;	
 }
 .woocommerce ul.products li.product.first, .woocommerce-page ul.products li.product.first{
-	clear:both;
+	/*clear:both;*/
 }
 .columns-1 li.product{
     width: 100%;

@@ -62,6 +62,8 @@
     <link rel="stylesheet" id="diamondstore_woocommerce_css-css" href="~/Content/woocommerce.css" type="text/css" media="all">
     <link rel="stylesheet" id="contact-form-7-css" href="~/Content/styles.css" type="text/css" media="all">
     <link rel="stylesheet" id="rs-plugin-settings-css" href="~/Content/settings.css" type="text/css" media="all">
+    <link rel="stylesheet" id="yith-magnifier-front-end" href="~/Content/yith-magnifier.css" type="text/css" media="all">
+    <link rel="stylesheet" id="yith-magnifier" href="~/Content/yith-zoom-magnifier.css" type="text/css" media="all">
     <style id="rs-plugin-settings-inline-css" type="text/css">
         #rs-demo-id {
         }
@@ -514,7 +516,7 @@
                                     <div class="menu-menu-container">
                                         <ul id="menu-menu" class="mega">
                                             <li id="menu-item-5211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2712 current_page_item menu-item-5211 home_first">@Html.ActionLink("Home", "Index")</li>
-                                            <li id="menu-item-5213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5213">@Html.ActionLink("Shop", "Shop", null, new { @class = "dc-mega" })</li>
+                                            <li id="menu-item-5213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5213">@Html.ActionLink("Shop", "Index", "Shop" , null, new { @class = "dc-mega" })</li>
                                             <li id="menu-item-5205" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5205">@Html.ActionLink("Contact Us", "Index", null, new { @class = "dc-mega" })</li>
                                             <li id="menu-item-5206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5205">
                                                 @Html.ActionLink("Gallery", "Index", null, new { @class = "dc-mega" })

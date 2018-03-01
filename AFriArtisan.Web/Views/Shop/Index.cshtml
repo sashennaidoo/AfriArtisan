@@ -1,0 +1,167 @@
+﻿@model IEnumerable<AfriArtisan.Domain.DTOs.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div id="main-content-inner-full" class="site-main extra">
+    <div class="main-content home-page full-width box-page">
+        <div id="woo-products" class="woo-content products_block shop woonew resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+            <div id="woo_grid" class="woo-grid cols-4">
+                <div class="woocommerce columns-4">
+                    <h2>Bracelets</h2>
+                    <ul class="products columns-3 row">
+                        @foreach (var product in Model.Where(c => c.ProductType == 1))
+                        {
+                            <li id="@product.Code" class="product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core product_tag-constituto first instock sale shipping-taxable purchasable product-type-simple" style="display: inline-block; height: 448px;">
+                                <span class="product-loading" style="display: none;"></span>
+                                <div class="container-inner">
+                                    <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link">		</a><div class="image-block">
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link"></a>
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })">
+
+                                            <span class="onsale">@product.Description</span>
+                                            <img width="279" height="326" src="/img/01-279x326.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="01" title="01">
+                                            <img width="279" height="326" src="/img/05-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                        </a><div class="product-block-hover">
+                                            <div style="clear:both"></div>
+                                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-detail-wrapper">
+                                    <div class="product-title"><a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" title="@product.Description"><h3 class="product-name">@product.Description</h3></a></div>
+                                    <div class="product-item-price"><span class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">R</span>@product.Cost</span></ins></span></div>
+                                    
+
+                                    <div class="product-button-hover">
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+
+                    </ul>
+                    <br />
+                    <br />
+                    <h2>Earrings</h2>
+                    <ul class="products columns-3 row">
+                        @foreach (var product in Model.Where(c => c.ProductType == 2))
+                        {
+                            <li id="@product.Code" class="product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core product_tag-constituto first instock sale shipping-taxable purchasable product-type-simple" style="display: inline-block; height: 448px;">
+                                <span class="product-loading" style="display: none;"></span>
+                                <div class="container-inner">
+                                    <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link">		</a><div class="image-block">
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link"></a>
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })">
+
+                                            <span class="onsale">@product.Description</span>
+                                            <img width="279" height="326" src="/img/01-279x326.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="01" title="01">
+                                            <img width="279" height="326" src="/img/05-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                        </a><div class="product-block-hover">
+                                            <div style="clear:both"></div>
+                                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-detail-wrapper">
+                                    <div class="product-title"><a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" title="@product.Description"><h3 class="product-name">@product.Description</h3></a></div>
+                                    <div class="product-item-price"><span class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">R</span>@product.Cost</span></ins></span></div>
+
+
+                                    <div class="product-button-hover">
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+
+                    </ul>
+                    <br />
+                    <br />
+                    <h2>Necklaces</h2>
+                    <ul class="products columns-3 row">
+                        @foreach (var product in Model.Where(c => c.ProductType == 3))
+                        {
+                            <li id="@product.Code" class="product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core product_tag-constituto first instock sale shipping-taxable purchasable product-type-simple" style="display: inline-block; height: 448px;">
+                                <span class="product-loading" style="display: none;"></span>
+                                <div class="container-inner">
+                                    <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link">		</a><div class="image-block">
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link"></a>
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })">
+
+                                            <span class="onsale">@product.Description</span>
+                                            <img width="279" height="326" src="/img/01-279x326.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="01" title="01">
+                                            <img width="279" height="326" src="/img/05-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                        </a><div class="product-block-hover">
+                                            <div style="clear:both"></div>
+                                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-detail-wrapper">
+                                    <div class="product-title"><a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" title="@product.Description"><h3 class="product-name">@product.Description</h3></a></div>
+                                    <div class="product-item-price"><span class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">R</span>@product.Cost</span></ins></span></div>
+
+
+                                    <div class="product-button-hover">
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+
+                    </ul>
+
+                    <br />
+                    <br />
+                    
+                    <h1>Decorations</h1>
+                    
+                    <ul class="products columns-3 row">
+                        @foreach (var product in Model.Where(c => c.ProductType == 4))
+                        {
+                            <li id="@product.Code" class="product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core product_tag-constituto first instock sale shipping-taxable purchasable product-type-simple" style="display: inline-block; height: 448px;">
+                                <span class="product-loading" style="display: none;"></span>
+                                <div class="container-inner">
+                                    <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link">		</a><div class="image-block">
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" class="woocommerce-LoopProduct-link"></a>
+                                        <a href="@Url.Action("Detail", "Shop", new { productId = product.Code })">
+
+                                            <span class="onsale">@product.Description</span>
+                                            <img width="279" height="326" src="/img/01-279x326.jpg" class="attachment-shop_catalog size-shop_catalog wp-post-image" alt="01" title="01">
+                                            <img width="279" height="326" src="/img/05-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                        </a><div class="product-block-hover">
+                                            <div style="clear:both"></div>
+                                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-detail-wrapper">
+                                    <div class="product-title"><a href="@Url.Action("Detail", "Shop", new { productId = product.Code })" title="@product.Description"><h3 class="product-name">@product.Description</h3></a></div>
+                                    <div class="product-item-price"><span class="price"><ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">R</span>@product.Cost</span></ins></span></div>
+
+
+                                    <div class="product-button-hover">
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        }
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+</div>
+</div>

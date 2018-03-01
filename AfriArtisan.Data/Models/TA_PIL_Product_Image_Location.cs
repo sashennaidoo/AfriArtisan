@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace AfriArtisan.Data.Models
     [Table("TA_PIL_Product_Image_Location")]
     public class TA_PIL_Product_Image_Location
     {
+        [Key]
         public int pil_code { get; set; }
 
         public int prd_code { get; set; }
