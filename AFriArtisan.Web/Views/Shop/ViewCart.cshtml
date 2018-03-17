@@ -1,0 +1,739 @@
+﻿@model AfriArtisan.Domain.DTOs.ShoppingCart
+
+@{
+    ViewBag.Title = "ViewCart";
+}
+
+<h2>ViewCart</h2>
+
+<div class="main-content-inner left-sidebar">
+    <div id="main-content" class="main-content left-sidebar box-page">
+        <div id="primary" class="content-area">
+            <div id="content" class="site-content" role="main">
+                <article id="post-2723" class="post-2723 page type-page status-publish hentry">
+                    <div class="entry-content">
+                        <div class="woocommerce">
+                            <form class="woocommerce-cart-form" action="http://demos.templatemela.com/woo/WCM02/WCM020029/cart/" method="post">
+
+                                <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove">&nbsp;</th>
+                                            <th class="product-thumbnail">&nbsp;</th>
+                                            <th class="product-name">Product</th>
+                                            <th class="product-price">Price</th>
+                                            <th class="product-quantity">Quantity</th>
+                                            <th class="product-subtotal">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr class="woocommerce-cart-form__cart-item cart_item">
+
+                                            <td class="product-remove">
+                                                <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/cart/?remove_item=0a65e195cb51418279b6fa8d96847a60&amp;_wpnonce=247ddde95a" class="remove" aria-label="Remove this item" data-product_id="2371" data-product_sku="Prod003">×</a>
+                                            </td>
+
+                                            <td class="product-thumbnail"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/aliquam-risus/"><img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/19-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""></a></td>
+
+                                            <td class="product-name" data-title="Product"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/aliquam-risus/">Aliquam Risus Earings</a></td>
+
+                                            <td class="product-price" data-title="Price">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>225.00</span>
+                                            </td>
+
+                                            <td class="product-quantity" data-title="Quantity">
+                                                <div class="quantity">
+                                                    <label class="screen-reader-text" for="quantity_5aacdd2f0c77b">Quantity</label>
+                                                    <input type="number" id="quantity_5aacdd2f0c77b" class="input-text qty text" step="1" min="0" max="1494" name="cart[0a65e195cb51418279b6fa8d96847a60][qty]" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Aliquam Risus Earings quantity">
+                                                </div>
+                                            </td>
+
+                                            <td class="product-subtotal" data-title="Total">
+                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>225.00</span>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td colspan="6" class="actions">
+
+                                                <div class="coupon">
+                                                    <label for="coupon_code">Coupon:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code"> <input type="submit" class="button" name="apply_coupon" value="Apply coupon">
+                                                </div>
+
+                                                <button type="submit" class="button" name="update_cart" value="Update cart" disabled="">Update cart</button>
+
+
+                                                <input type="hidden" id="_wpnonce" name="_wpnonce" value="247ddde95a"><input type="hidden" name="_wp_http_referer" value="/woo/WCM02/WCM020029/cart/">
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </form>
+
+                            <div class="cart-collaterals">
+                                <div class="cart_totals ">
+
+
+                                    <h2>Cart totals</h2>
+
+                                    <table cellspacing="0" class="shop_table shop_table_responsive">
+
+                                        <tbody>
+                                            <tr class="cart-subtotal">
+                                                <th>Subtotal</th>
+                                                <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>225.00</span></td>
+                                            </tr>
+
+
+
+
+                                            <tr class="shipping">
+                                                <th>Shipping</th>
+                                                <td data-title="Shipping">
+                                                    Free shipping <input type="hidden" name="shipping_method[0]" data-index="0" id="shipping_method_0" value="free_shipping:1" class="shipping_method">
+
+
+                                                    <form class="woocommerce-shipping-calculator" action="http://demos.templatemela.com/woo/WCM02/WCM020029/cart/" method="post">
+
+                                                        <p><a href="#" class="shipping-calculator-button">Calculate shipping</a></p>
+
+                                                        <section class="shipping-calculator-form" style="display:none;">
+
+                                                            <p class="form-row form-row-wide" id="calc_shipping_country_field">
+                                                                <select name="calc_shipping_country" id="calc_shipping_country" class="country_to_state country_select" rel="calc_shipping_state">
+                                                                    <option value="">Select a country…</option>
+                                                                    <option value="AX">Åland Islands</option>
+                                                                    <option value="AF">Afghanistan</option>
+                                                                    <option value="AL">Albania</option>
+                                                                    <option value="DZ">Algeria</option>
+                                                                    <option value="AS">American Samoa</option>
+                                                                    <option value="AD">Andorra</option>
+                                                                    <option value="AO">Angola</option>
+                                                                    <option value="AI">Anguilla</option>
+                                                                    <option value="AQ">Antarctica</option>
+                                                                    <option value="AG">Antigua and Barbuda</option>
+                                                                    <option value="AR">Argentina</option>
+                                                                    <option value="AM">Armenia</option>
+                                                                    <option value="AW">Aruba</option>
+                                                                    <option value="AU">Australia</option>
+                                                                    <option value="AT">Austria</option>
+                                                                    <option value="AZ">Azerbaijan</option>
+                                                                    <option value="BS">Bahamas</option>
+                                                                    <option value="BH">Bahrain</option>
+                                                                    <option value="BD">Bangladesh</option>
+                                                                    <option value="BB">Barbados</option>
+                                                                    <option value="BY">Belarus</option>
+                                                                    <option value="PW">Belau</option>
+                                                                    <option value="BE">Belgium</option>
+                                                                    <option value="BZ">Belize</option>
+                                                                    <option value="BJ">Benin</option>
+                                                                    <option value="BM">Bermuda</option>
+                                                                    <option value="BT">Bhutan</option>
+                                                                    <option value="BO">Bolivia</option>
+                                                                    <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                                                                    <option value="BA">Bosnia and Herzegovina</option>
+                                                                    <option value="BW">Botswana</option>
+                                                                    <option value="BV">Bouvet Island</option>
+                                                                    <option value="BR">Brazil</option>
+                                                                    <option value="IO">British Indian Ocean Territory</option>
+                                                                    <option value="VG">British Virgin Islands</option>
+                                                                    <option value="BN">Brunei</option>
+                                                                    <option value="BG">Bulgaria</option>
+                                                                    <option value="BF">Burkina Faso</option>
+                                                                    <option value="BI">Burundi</option>
+                                                                    <option value="KH">Cambodia</option>
+                                                                    <option value="CM">Cameroon</option>
+                                                                    <option value="CA">Canada</option>
+                                                                    <option value="CV">Cape Verde</option>
+                                                                    <option value="KY">Cayman Islands</option>
+                                                                    <option value="CF">Central African Republic</option>
+                                                                    <option value="TD">Chad</option>
+                                                                    <option value="CL">Chile</option>
+                                                                    <option value="CN">China</option>
+                                                                    <option value="CX">Christmas Island</option>
+                                                                    <option value="CC">Cocos (Keeling) Islands</option>
+                                                                    <option value="CO">Colombia</option>
+                                                                    <option value="KM">Comoros</option>
+                                                                    <option value="CG">Congo (Brazzaville)</option>
+                                                                    <option value="CD">Congo (Kinshasa)</option>
+                                                                    <option value="CK">Cook Islands</option>
+                                                                    <option value="CR">Costa Rica</option>
+                                                                    <option value="HR">Croatia</option>
+                                                                    <option value="CU">Cuba</option>
+                                                                    <option value="CW">Curaçao</option>
+                                                                    <option value="CY">Cyprus</option>
+                                                                    <option value="CZ">Czech Republic</option>
+                                                                    <option value="DK">Denmark</option>
+                                                                    <option value="DJ">Djibouti</option>
+                                                                    <option value="DM">Dominica</option>
+                                                                    <option value="DO">Dominican Republic</option>
+                                                                    <option value="EC">Ecuador</option>
+                                                                    <option value="EG">Egypt</option>
+                                                                    <option value="SV">El Salvador</option>
+                                                                    <option value="GQ">Equatorial Guinea</option>
+                                                                    <option value="ER">Eritrea</option>
+                                                                    <option value="EE">Estonia</option>
+                                                                    <option value="ET">Ethiopia</option>
+                                                                    <option value="FK">Falkland Islands</option>
+                                                                    <option value="FO">Faroe Islands</option>
+                                                                    <option value="FJ">Fiji</option>
+                                                                    <option value="FI">Finland</option>
+                                                                    <option value="FR">France</option>
+                                                                    <option value="GF">French Guiana</option>
+                                                                    <option value="PF">French Polynesia</option>
+                                                                    <option value="TF">French Southern Territories</option>
+                                                                    <option value="GA">Gabon</option>
+                                                                    <option value="GM">Gambia</option>
+                                                                    <option value="GE">Georgia</option>
+                                                                    <option value="DE">Germany</option>
+                                                                    <option value="GH">Ghana</option>
+                                                                    <option value="GI">Gibraltar</option>
+                                                                    <option value="GR">Greece</option>
+                                                                    <option value="GL">Greenland</option>
+                                                                    <option value="GD">Grenada</option>
+                                                                    <option value="GP">Guadeloupe</option>
+                                                                    <option value="GU">Guam</option>
+                                                                    <option value="GT">Guatemala</option>
+                                                                    <option value="GG">Guernsey</option>
+                                                                    <option value="GN">Guinea</option>
+                                                                    <option value="GW">Guinea-Bissau</option>
+                                                                    <option value="GY">Guyana</option>
+                                                                    <option value="HT">Haiti</option>
+                                                                    <option value="HM">Heard Island and McDonald Islands</option>
+                                                                    <option value="HN">Honduras</option>
+                                                                    <option value="HK">Hong Kong</option>
+                                                                    <option value="HU">Hungary</option>
+                                                                    <option value="IS">Iceland</option>
+                                                                    <option value="IN">India</option>
+                                                                    <option value="ID">Indonesia</option>
+                                                                    <option value="IR">Iran</option>
+                                                                    <option value="IQ">Iraq</option>
+                                                                    <option value="IE">Ireland</option>
+                                                                    <option value="IM">Isle of Man</option>
+                                                                    <option value="IL">Israel</option>
+                                                                    <option value="IT">Italy</option>
+                                                                    <option value="CI">Ivory Coast</option>
+                                                                    <option value="JM">Jamaica</option>
+                                                                    <option value="JP">Japan</option>
+                                                                    <option value="JE">Jersey</option>
+                                                                    <option value="JO">Jordan</option>
+                                                                    <option value="KZ">Kazakhstan</option>
+                                                                    <option value="KE">Kenya</option>
+                                                                    <option value="KI">Kiribati</option>
+                                                                    <option value="KW">Kuwait</option>
+                                                                    <option value="KG">Kyrgyzstan</option>
+                                                                    <option value="LA">Laos</option>
+                                                                    <option value="LV">Latvia</option>
+                                                                    <option value="LB">Lebanon</option>
+                                                                    <option value="LS">Lesotho</option>
+                                                                    <option value="LR">Liberia</option>
+                                                                    <option value="LY">Libya</option>
+                                                                    <option value="LI">Liechtenstein</option>
+                                                                    <option value="LT">Lithuania</option>
+                                                                    <option value="LU">Luxembourg</option>
+                                                                    <option value="MO">Macao S.A.R., China</option>
+                                                                    <option value="MK">Macedonia</option>
+                                                                    <option value="MG">Madagascar</option>
+                                                                    <option value="MW">Malawi</option>
+                                                                    <option value="MY">Malaysia</option>
+                                                                    <option value="MV">Maldives</option>
+                                                                    <option value="ML">Mali</option>
+                                                                    <option value="MT">Malta</option>
+                                                                    <option value="MH">Marshall Islands</option>
+                                                                    <option value="MQ">Martinique</option>
+                                                                    <option value="MR">Mauritania</option>
+                                                                    <option value="MU">Mauritius</option>
+                                                                    <option value="YT">Mayotte</option>
+                                                                    <option value="MX">Mexico</option>
+                                                                    <option value="FM">Micronesia</option>
+                                                                    <option value="MD">Moldova</option>
+                                                                    <option value="MC">Monaco</option>
+                                                                    <option value="MN">Mongolia</option>
+                                                                    <option value="ME">Montenegro</option>
+                                                                    <option value="MS">Montserrat</option>
+                                                                    <option value="MA">Morocco</option>
+                                                                    <option value="MZ">Mozambique</option>
+                                                                    <option value="MM">Myanmar</option>
+                                                                    <option value="NA">Namibia</option>
+                                                                    <option value="NR">Nauru</option>
+                                                                    <option value="NP">Nepal</option>
+                                                                    <option value="NL">Netherlands</option>
+                                                                    <option value="NC">New Caledonia</option>
+                                                                    <option value="NZ">New Zealand</option>
+                                                                    <option value="NI">Nicaragua</option>
+                                                                    <option value="NE">Niger</option>
+                                                                    <option value="NG">Nigeria</option>
+                                                                    <option value="NU">Niue</option>
+                                                                    <option value="NF">Norfolk Island</option>
+                                                                    <option value="KP">North Korea</option>
+                                                                    <option value="MP">Northern Mariana Islands</option>
+                                                                    <option value="NO">Norway</option>
+                                                                    <option value="OM">Oman</option>
+                                                                    <option value="PK">Pakistan</option>
+                                                                    <option value="PS">Palestinian Territory</option>
+                                                                    <option value="PA">Panama</option>
+                                                                    <option value="PG">Papua New Guinea</option>
+                                                                    <option value="PY">Paraguay</option>
+                                                                    <option value="PE">Peru</option>
+                                                                    <option value="PH">Philippines</option>
+                                                                    <option value="PN">Pitcairn</option>
+                                                                    <option value="PL">Poland</option>
+                                                                    <option value="PT">Portugal</option>
+                                                                    <option value="PR">Puerto Rico</option>
+                                                                    <option value="QA">Qatar</option>
+                                                                    <option value="RE">Reunion</option>
+                                                                    <option value="RO">Romania</option>
+                                                                    <option value="RU">Russia</option>
+                                                                    <option value="RW">Rwanda</option>
+                                                                    <option value="ST">São Tomé and Príncipe</option>
+                                                                    <option value="BL">Saint Barthélemy</option>
+                                                                    <option value="SH">Saint Helena</option>
+                                                                    <option value="KN">Saint Kitts and Nevis</option>
+                                                                    <option value="LC">Saint Lucia</option>
+                                                                    <option value="SX">Saint Martin (Dutch part)</option>
+                                                                    <option value="MF">Saint Martin (French part)</option>
+                                                                    <option value="PM">Saint Pierre and Miquelon</option>
+                                                                    <option value="VC">Saint Vincent and the Grenadines</option>
+                                                                    <option value="WS">Samoa</option>
+                                                                    <option value="SM">San Marino</option>
+                                                                    <option value="SA">Saudi Arabia</option>
+                                                                    <option value="SN">Senegal</option>
+                                                                    <option value="RS">Serbia</option>
+                                                                    <option value="SC">Seychelles</option>
+                                                                    <option value="SL">Sierra Leone</option>
+                                                                    <option value="SG">Singapore</option>
+                                                                    <option value="SK">Slovakia</option>
+                                                                    <option value="SI">Slovenia</option>
+                                                                    <option value="SB">Solomon Islands</option>
+                                                                    <option value="SO">Somalia</option>
+                                                                    <option value="ZA" selected="selected">South Africa</option>
+                                                                    <option value="GS">South Georgia/Sandwich Islands</option>
+                                                                    <option value="KR">South Korea</option>
+                                                                    <option value="SS">South Sudan</option>
+                                                                    <option value="ES">Spain</option>
+                                                                    <option value="LK">Sri Lanka</option>
+                                                                    <option value="SD">Sudan</option>
+                                                                    <option value="SR">Suriname</option>
+                                                                    <option value="SJ">Svalbard and Jan Mayen</option>
+                                                                    <option value="SZ">Swaziland</option>
+                                                                    <option value="SE">Sweden</option>
+                                                                    <option value="CH">Switzerland</option>
+                                                                    <option value="SY">Syria</option>
+                                                                    <option value="TW">Taiwan</option>
+                                                                    <option value="TJ">Tajikistan</option>
+                                                                    <option value="TZ">Tanzania</option>
+                                                                    <option value="TH">Thailand</option>
+                                                                    <option value="TL">Timor-Leste</option>
+                                                                    <option value="TG">Togo</option>
+                                                                    <option value="TK">Tokelau</option>
+                                                                    <option value="TO">Tonga</option>
+                                                                    <option value="TT">Trinidad and Tobago</option>
+                                                                    <option value="TN">Tunisia</option>
+                                                                    <option value="TR">Turkey</option>
+                                                                    <option value="TM">Turkmenistan</option>
+                                                                    <option value="TC">Turks and Caicos Islands</option>
+                                                                    <option value="TV">Tuvalu</option>
+                                                                    <option value="UG">Uganda</option>
+                                                                    <option value="UA">Ukraine</option>
+                                                                    <option value="AE">United Arab Emirates</option>
+                                                                    <option value="GB">United Kingdom (UK)</option>
+                                                                    <option value="US">United States (US)</option>
+                                                                    <option value="UM">United States (US) Minor Outlying Islands</option>
+                                                                    <option value="VI">United States (US) Virgin Islands</option>
+                                                                    <option value="UY">Uruguay</option>
+                                                                    <option value="UZ">Uzbekistan</option>
+                                                                    <option value="VU">Vanuatu</option>
+                                                                    <option value="VA">Vatican</option>
+                                                                    <option value="VE">Venezuela</option>
+                                                                    <option value="VN">Vietnam</option>
+                                                                    <option value="WF">Wallis and Futuna</option>
+                                                                    <option value="EH">Western Sahara</option>
+                                                                    <option value="YE">Yemen</option>
+                                                                    <option value="ZM">Zambia</option>
+                                                                    <option value="ZW">Zimbabwe</option>
+                                                                </select>
+                                                            </p>
+
+                                                            <p class="form-row form-row-wide validate-required" id="calc_shipping_state_field">
+                                                                <span>
+                                                                    <select name="calc_shipping_state" class="state_select" id="calc_shipping_state" placeholder="State / County"><option value="">Select an option…</option><option value="EC">Eastern Cape</option><option value="FS">Free State</option><option value="GP">Gauteng</option><option value="KZN">KwaZulu-Natal</option><option value="LP">Limpopo</option><option value="MP">Mpumalanga</option><option value="NC">Northern Cape</option><option value="NW">North West</option><option value="WC">Western Cape</option></select>
+                                                                </span>
+                                                            </p>
+
+
+                                                            <p class="form-row form-row-wide validate-required" id="calc_shipping_city_field">
+                                                                <input type="text" class="input-text" value="" placeholder="Town / City" name="calc_shipping_city" id="calc_shipping_city">
+                                                            </p>
+
+
+
+                                                            <p class="form-row form-row-wide validate-required" id="calc_shipping_postcode_field">
+                                                                <input type="text" class="input-text" value="" placeholder="Postcode / ZIP" name="calc_shipping_postcode" id="calc_shipping_postcode">
+                                                            </p>
+
+
+                                                            <p><button type="submit" name="calc_shipping" value="1" class="button">Update totals</button></p>
+
+                                                            <input type="hidden" id="_wpnonce" name="_wpnonce" value="247ddde95a"><input type="hidden" name="_wp_http_referer" value="/woo/WCM02/WCM020029/cart/">
+                                                        </section>
+                                                    </form>
+
+                                                </td>
+                                            </tr>
+
+
+
+
+
+
+                                            <tr class="order-total">
+                                                <th>Total</th>
+                                                <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>225.00</span></strong> </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+
+                                    <div class="wc-proceed-to-checkout">
+
+                                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/checkout/" class="checkout-button button alt wc-forward">
+                                            Proceed to checkout
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                                <div class="cross-sells">
+
+                                    <h2>You may be interested in…</h2>
+
+                                    <ul class="products columns-3 owl-carousel owl-theme" style="opacity: 1; display: block;">
+
+
+
+                                        <div class="owl-wrapper-outer">
+                                            <div class="owl-wrapper" style="width: 2008px; left: 0px; display: block; transition: all 0ms ease; transform: translate3d(0px, 0px, 0px);">
+                                                <div class="owl-item" style="width: 251px;">
+                                                    <li class="post-2596 product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core first instock sale featured shipping-taxable purchasable product-type-simple" style="height: 446px;">
+                                                        <span class="product-loading" style="display: none;"></span>
+                                                        <div class="container-inner">
+                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/nullam-mollis/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">		</a><div class="image-block">
+                                                                <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/nullam-mollis/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/nullam-mollis/">
+
+                                                                    <span class="onsale">Sale!</span>
+                                                                    <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/17-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""><img width="279" height="326" src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/02-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                                                </a><div class="product-block-hover">
+                                                                    <a href="#" class="button yith-wcqv-button" data-product_id="2596">Quick View</a><div class="yith-wcwl-add-to-wishlist add-to-wishlist-2596">
+                                                                        <div class="yith-wcwl-add-button show" style="display:block">
+
+
+                                                                            <a href="/woo/WCM02/WCM020029/cart/?add_to_wishlist=2596" rel="nofollow" data-product-id="2596" data-product-type="simple" class="add_to_wishlist">
+                                                                                Add to Wishlist
+                                                                            </a>
+                                                                            <img src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                                                            <span class="feedback">Product added!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                                                            <span class="feedback">The product is already in the wishlist!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div style="clear:both"></div>
+                                                                        <div class="yith-wcwl-wishlistaddresponse"></div>
+
+                                                                    </div><div class="woocommerce product compare-button"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029?action=yith-woocompare-add-product&amp;id=2596" class="compare button" data-product_id="2596" rel="nofollow">Compare</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-detail-wrapper">
+                                                                <div class="product-title"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/nullam-mollis/" title="Nullam mol Padent"><h3 class="product-name">Nullam mol Padent</h3></a></div>
+                                                                <div class="product-item-price"><span class="price"><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>350.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>310.00</span></ins></span></div>
+                                                                <div class="star-rating"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+
+                                                                <div class="product-button-hover">
+                                                                    <a href="/woo/WCM02/WCM020029/cart/?add-to-cart=2596" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2596" data-product_sku="Prod004" aria-label="Add “Nullam mol Padent” to your cart" rel="nofollow">Add to cart</a>
+
+
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </div><div class="owl-item" style="width: 251px;">
+                                                    <li class="post-2357 product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core product_tag-constituto  instock sale featured shipping-taxable purchasable product-type-simple" style="height: 446px;">
+                                                        <span class="product-loading" style="display: none;"></span>
+                                                        <div class="container-inner">
+                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/feugiat-viverra/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">		</a><div class="image-block">
+                                                                <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/feugiat-viverra/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/feugiat-viverra/">
+
+                                                                    <span class="onsale">Sale!</span>
+                                                                    <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/03-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""><img width="279" height="326" src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/15-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                                                </a><div class="product-block-hover">
+                                                                    <a href="#" class="button yith-wcqv-button" data-product_id="2357">Quick View</a><div class="yith-wcwl-add-to-wishlist add-to-wishlist-2357">
+                                                                        <div class="yith-wcwl-add-button show" style="display:block">
+
+
+                                                                            <a href="/woo/WCM02/WCM020029/cart/?add_to_wishlist=2357" rel="nofollow" data-product-id="2357" data-product-type="simple" class="add_to_wishlist">
+                                                                                Add to Wishlist
+                                                                            </a>
+                                                                            <img src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                                                            <span class="feedback">Product added!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                                                            <span class="feedback">The product is already in the wishlist!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div style="clear:both"></div>
+                                                                        <div class="yith-wcwl-wishlistaddresponse"></div>
+
+                                                                    </div><div class="woocommerce product compare-button"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029?action=yith-woocompare-add-product&amp;id=2357" class="compare button" data-product_id="2357" rel="nofollow">Compare</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-detail-wrapper">
+                                                                <div class="product-title"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/feugiat-viverra/" title="Feugiat Viverra Earing"><h3 class="product-name">Feugiat Viverra Earing</h3></a></div>
+                                                                <div class="product-item-price"><span class="price"><del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>100.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>85.00</span></ins></span></div>
+                                                                <div class="star-rating"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+
+                                                                <div class="product-button-hover">
+                                                                    <a href="/woo/WCM02/WCM020029/cart/?add-to-cart=2357" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="2357" data-product_sku="Prod019" aria-label="Add “Feugiat Viverra Earing” to your cart" rel="nofollow">Add to cart</a>
+
+
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </div><div class="owl-item" style="width: 251px;">
+                                                    <li class="post-2590 product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core last instock featured shipping-taxable purchasable product-type-variable has-default-attributes has-children" style="height: 446px;">
+                                                        <span class="product-loading" style="display: none;"></span>
+                                                        <div class="container-inner">
+                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/vivamus-quis/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">		</a><div class="image-block">
+                                                                <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/vivamus-quis/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/vivamus-quis/">
+                                                                    <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/11-e1467608396100-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""><img width="279" height="326" src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/07-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                                                </a><div class="product-block-hover">
+                                                                    <a href="#" class="button yith-wcqv-button" data-product_id="2590">Quick View</a><div class="yith-wcwl-add-to-wishlist add-to-wishlist-2590">
+                                                                        <div class="yith-wcwl-add-button show" style="display:block">
+
+
+                                                                            <a href="/woo/WCM02/WCM020029/cart/?add_to_wishlist=2590" rel="nofollow" data-product-id="2590" data-product-type="variable" class="add_to_wishlist">
+                                                                                Add to Wishlist
+                                                                            </a>
+                                                                            <img src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                                                            <span class="feedback">Product added!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                                                            <span class="feedback">The product is already in the wishlist!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div style="clear:both"></div>
+                                                                        <div class="yith-wcwl-wishlistaddresponse"></div>
+
+                                                                    </div><div class="woocommerce product compare-button"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029?action=yith-woocompare-add-product&amp;id=2590" class="compare button" data-product_id="2590" rel="nofollow">Compare</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-detail-wrapper">
+                                                                <div class="product-title"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/vivamus-quis/" title="Vivamus quis Ring"><h3 class="product-name">Vivamus quis Ring</h3></a></div>
+                                                                <div class="product-item-price"><span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>260.00</span> – <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>500.00</span></span></div>
+                                                                <div class="star-rating"><span style="width:40%">Rated <strong class="rating">2.00</strong> out of 5</span></div>
+
+                                                                <div class="product-button-hover">
+                                                                    <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/vivamus-quis/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="2590" data-product_sku="Prod005" aria-label="Select options for “Vivamus quis Ring”" rel="nofollow">Select options</a>
+
+
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </div><div class="owl-item" style="width: 251px;">
+                                                    <li class="post-2587 product type-product status-publish has-post-thumbnail product_cat-astra-ring product_cat-bangles product_cat-belly-chains product_cat-diamond-bracelets product_cat-diamond-ring product_cat-head-jewelrys product_cat-kangan product_cat-naptun-diamond product_cat-necklaces product_cat-pledge-pins product_cat-slave-bracelets product_cat-white-gold-rings product_cat-women-core first instock sale featured shipping-taxable product-type-grouped" style="height: 446px;">
+                                                        <span class="product-loading" style="display: none;"></span>
+                                                        <div class="container-inner">
+                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/tempor-male/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">		</a><div class="image-block">
+                                                                <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/tempor-male/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"></a><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/tempor-male/">
+
+                                                                    <span class="onsale">Sale!</span>
+                                                                    <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/14-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""><img width="279" height="326" src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/20-279x326.jpg" class="secondary-image attachment-shop-catalog" alt="">
+                                                                </a><div class="product-block-hover">
+                                                                    <a href="#" class="button yith-wcqv-button" data-product_id="2587">Quick View</a><div class="yith-wcwl-add-to-wishlist add-to-wishlist-2587">
+                                                                        <div class="yith-wcwl-add-button show" style="display:block">
+
+
+                                                                            <a href="/woo/WCM02/WCM020029/cart/?add_to_wishlist=2587" rel="nofollow" data-product-id="2587" data-product-type="grouped" class="add_to_wishlist">
+                                                                                Add to Wishlist
+                                                                            </a>
+                                                                            <img src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/plugins/yith-woocommerce-wishlist/assets/images/wpspin_light.gif" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden">
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                                                            <span class="feedback">Product added!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                                                            <span class="feedback">The product is already in the wishlist!</span>
+                                                                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/wishlist/" rel="nofollow">
+                                                                                Browse Wishlist
+                                                                            </a>
+                                                                        </div>
+
+                                                                        <div style="clear:both"></div>
+                                                                        <div class="yith-wcwl-wishlistaddresponse"></div>
+
+                                                                    </div><div class="woocommerce product compare-button"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029?action=yith-woocompare-add-product&amp;id=2587" class="compare button" data-product_id="2587" rel="nofollow">Compare</a></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-detail-wrapper">
+                                                                <div class="product-title"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/tempor-male/" title="Tempor male Ring"><h3 class="product-name">Tempor male Ring</h3></a></div>
+                                                                <div class="product-item-price"><span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>310.00</span></span></div>
+                                                                <div class="star-rating"><span style="width:80%">Rated <strong class="rating">4.00</strong> out of 5</span></div>
+
+                                                                <div class="product-button-hover">
+                                                                    <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/tempor-male/" data-quantity="1" class="button product_type_grouped" data-product_id="2587" data-product_sku="Prod006" aria-label="View products in the “Tempor male Ring” group" rel="nofollow">View products</a>
+
+
+                                                                    <div class="clear"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev">prev</div><div class="owl-next">next</div></div></div>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="inner-container">
+                        </div>
+                        <!-- .inner-container -->
+                    </div>
+                    <!-- .entry-content -->
+                </article>
+                <!-- #post-## -->
+            </div>
+            <!-- #content -->
+        </div>
+        <!-- #primary -->
+        <div id="secondary">
+            <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                <aside id="woocommerce_product_categories-1" class="widget woocommerce widget_product_categories">
+                    <div class="title-outer"> <h1 class="widget-title">Categories</h1></div><ul class="product-categories toggle-block treeview-list treeview">
+                        <li class="cat-item cat-item-108"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/bangles/">Bangles</a></li>
+                        <li class="cat-item cat-item-109"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/belly-chains/">Belly chains</a></li>
+                        <li class="cat-item cat-item-110"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/diamond-bracelets/">Diamond Bracelets</a></li>
+                        <li class="cat-item cat-item-111 cat-parent expandable">
+                            <div class="hitarea cat-item-hitarea cat-item-111-hitarea cat-parent-hitarea expandable-hitarea"></div><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/diamond-ring/">Diamond Ring</a><ul class="children" style="display: none;">
+                                <li class="cat-item cat-item-119 cat-parent expandable">
+                                    <div class="hitarea cat-item-hitarea cat-item-119-hitarea cat-parent-hitarea expandable-hitarea"></div><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/diamond-ring/astra-ring/">Astra Ring</a>	<ul class="children" style="display: none;">
+                                        <li class="cat-item cat-item-120 last"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/diamond-ring/astra-ring/naptun-diamond/">Naptun Diamond</a></li>
+                                    </ul>
+                                </li>
+                                <li class="cat-item cat-item-117 last"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/diamond-ring/white-gold-rings/">White gold rings</a></li>
+                            </ul>
+                        </li>
+                        <li class="cat-item cat-item-112"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/head-jewelrys/">Head jewelrys</a></li>
+                        <li class="cat-item cat-item-113"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/kangan/">Kangan</a></li>
+                        <li class="cat-item cat-item-114"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/necklaces/">Necklaces</a></li>
+                        <li class="cat-item cat-item-115"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/pledge-pins/">Pledge pins</a></li>
+                        <li class="cat-item cat-item-116"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/slave-bracelets/">Slave bracelets</a></li>
+                        <li class="cat-item cat-item-140"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/uncategorized/">Uncategorized</a></li>
+                        <li class="cat-item cat-item-118 last"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-category/women-core/">Women Core</a></li>
+                    </ul>
+                </aside><aside id="woocommerce_product_tag_cloud-1" class="widget woocommerce widget_product_tag_cloud">
+                    <div class="title-outer"> <h1 class="widget-title">Product Tags</h1></div><div class="tagcloud toggle-block">
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/appetere/" class="tag-cloud-link tag-link-88 tag-link-position-1" style="font-size: 15.636363636364pt;" aria-label="Appetere (3 products)">Appetere</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/audire/" class="tag-cloud-link tag-link-89 tag-link-position-2" style="font-size: 8pt;" aria-label="Audire (2 products)">Audire</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/constituto/" class="tag-cloud-link tag-link-92 tag-link-position-3" style="font-size: 22pt;" aria-label="Constituto (4 products)">Constituto</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/egretas/" class="tag-cloud-link tag-link-93 tag-link-position-4" style="font-size: 8pt;" aria-label="egretas (2 products)">egretas</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/hello/" class="tag-cloud-link tag-link-95 tag-link-position-5" style="font-size: 8pt;" aria-label="hello (2 products)">hello</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/how-are-you/" class="tag-cloud-link tag-link-96 tag-link-position-6" style="font-size: 8pt;" aria-label="how are you (2 products)">how are you</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/nostreum/" class="tag-cloud-link tag-link-99 tag-link-position-7" style="font-size: 22pt;" aria-label="Nostreum (4 products)">Nostreum</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/omnesque/" class="tag-cloud-link tag-link-100 tag-link-position-8" style="font-size: 8pt;" aria-label="Omnesque (2 products)">Omnesque</a>
+                        <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product-tag/quot/" class="tag-cloud-link tag-link-105 tag-link-position-9" style="font-size: 8pt;" aria-label="Quot (2 products)">Quot</a>
+                    </div>
+                </aside><aside id="woocommerce_top_rated_products-1" class="widget woocommerce widget_top_rated_products">
+                    <div class="title-outer"> <h1 class="widget-title">Top Rated Products</h1></div><ul class="product_list_widget toggle-block">
+                        <li>
+
+                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/feugiat-viverra/">
+                                <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/03-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="">		<span class="product-title">Feugiat Viverra Earing</span>
+                            </a>
+
+                            <div class="star-rating"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            <del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>100.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>85.00</span></ins>
+                        </li>
+                        <li>
+
+                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/nullam-mollis/">
+                                <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/17-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="">		<span class="product-title">Nullam mol Padent</span>
+                            </a>
+
+                            <div class="star-rating"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            <del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>350.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>310.00</span></ins>
+                        </li>
+                        <li class="last">
+
+                            <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/adipiscing-sem-neque-sed/">
+                                <img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/06-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt="">		<span class="product-title">Adipiscing sem Ring</span>
+                            </a>
+
+                            <div class="star-rating"><span style="width:95%">Rated <strong class="rating">4.75</strong> out of 5</span></div>
+                            <del><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>520.00</span></del> <ins><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>500.00</span></ins>
+                        </li>
+                    </ul>
+                </aside><aside id="leftbannerwidget-1" class="widget widgets-leftbanner">
+                    <div class="left-banner">
+                        <a href="#">
+                            <img src="http://demos.templatemela.com/woo/WCM02/WCM020029/wp-content/themes/diamondstore/images/megnor/banners/leftbanner.jpg" alt="" class="vv">
+                        </a>
+                    </div>
+                </aside>
+            </div>
+            <!-- #primary-sidebar -->
+        </div>
+        <!-- #secondary -->
+    </div>
+    <!-- #main-content -->
+</div>

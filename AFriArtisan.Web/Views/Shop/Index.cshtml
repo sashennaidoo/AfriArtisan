@@ -36,7 +36,7 @@
                                     
 
                                     <div class="product-button-hover">
-                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart" onclick="AddToCart(@product.Code, 1)">Add to cart</a>
 
                                         <div class="clear"></div>
                                     </div>
@@ -73,7 +73,7 @@
 
 
                                     <div class="product-button-hover">
-                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart" onclick="AddToCart(@product.Code, 1)">Add to cart</a>
 
                                         <div class="clear"></div>
                                     </div>
@@ -110,7 +110,7 @@
 
 
                                     <div class="product-button-hover">
-                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart" onclick="AddToCart(@product.Code, 1)">Add to cart</a>
 
                                         <div class="clear"></div>
                                     </div>
@@ -150,7 +150,7 @@
 
 
                                     <div class="product-button-hover">
-                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart">Add to cart</a>
+                                        <a rel="nofollow" href="http://demos.templatemela.com/woo/WCM02/WCM020029/?add-to-cart=5138" data-quantity="1" data-product_id="@product.Code" data-product_sku="@product.ItemNumber" class="button product_type_simple add_to_cart_button ajax_add_to_cart" onclick="AddToCart(@product.Code, 1)">Add to cart</a>
 
                                         <div class="clear"></div>
                                     </div>
@@ -165,3 +165,18 @@
         </div>
 </div>
 </div>
+
+@section scripts 
+{
+    <script type="text/javascript" >
+        function AddToCart(productId, qty) {
+            $.ajax({
+                url: "@Url.Action("AddToCart", "Shop")",
+                type: "POST",
+                data: { productsId: productId, qty : qty },
+                dataType: "json"
+            }
+            )
+        }
+    </script>    
+}

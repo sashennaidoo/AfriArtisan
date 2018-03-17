@@ -5,4 +5,35 @@
 }
 
 <h2>SignIn</h2>
+<br />
+<br />
+<div class="home page-template page-template-page-templates page-template-home page-template-page-templateshome-php page page-id-2712 siteorigin-panels  siteorigin-panels-home grid shop-left-sidebar topbar">
+    <div id="yith-wcwl-popup-message" style="display: none;"><div id="yith-wcwl-message"></div></div>
+    <div id="page" class="hfeed site">
 
+        <!-- #masthead -->
+        <!-- Center -->
+        <div id="main" class="site-main extra">
+            <div class="main_inner">
+                @using (Html.BeginForm("SignIn", "User", FormMethod.Post))
+                {
+                    <div class="col-lg-12 col-md-12 content-centre" style="padding: 20px 25px 25px 40px;width:90%;background:#fff;">
+
+                        <h2>Sign In</h2>
+
+                        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                            <label for="reg_email">Email address <span class="required">*</span></label>
+                            @Html.EditorFor(c => Model.EmailAddress, new { htmlAttributes = new { @type = "email", @class = "woocommerce-Input woocommerce-Input--text input-text", @style = "width:100%" } })
+                        </p>
+                        <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                            <label for="reg_email">First Name <span class="required">*</span></label>
+                            @Html.EditorFor(c => Model.Password, new { htmlAttributes = new { @type = "text", @class = "woocommerce-Input woocommerce-Input--text input-text", @style = "width:100%" } })
+                        </p>
+                        <button type="submit" class="woocommerce-Button button" name="register" value="Register">Register</button>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>

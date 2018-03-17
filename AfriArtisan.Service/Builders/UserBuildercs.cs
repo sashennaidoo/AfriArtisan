@@ -28,9 +28,9 @@ namespace AfriArtisan.Service.Builders
         }
 
 
-        public void SignUp(UserSignUp signUpInfo)
+        public int SignUp(UserSignUp signUpInfo)
         {
-
+            int userCode = 0;
             var passwordHash = Hashing.ComputeHash(signUpInfo.Password, "SHA256", Encoding.UTF8.GetBytes(signUpInfo.EmailAddress));
             var user = new TM_USR_User
             {
@@ -46,9 +46,10 @@ namespace AfriArtisan.Service.Builders
             if (_context.User.FirstOrDefault(c => c.usr_email_address == signUpInfo.EmailAddress) == null)
             {
                 var usr = _context.User.Add(user);
+                userCode = usr.usr_code;
             }
             _context.SaveChanges();
-
+            return userCode;
         }
         
         public User SignIn(string emailAddres, string password)
@@ -64,6 +65,16 @@ namespace AfriArtisan.Service.Builders
 
             return Mapper.Map<User>(user);
 
+        }
+
+        public User GetUser(int userCode)
+        {
+            var user = Mapper.Map<User>(_context.User.Where(c => c.usr_code == userCode));
+
+            if (user != null)
+                return user;
+            else
+                return new User();
         }
 
     }
