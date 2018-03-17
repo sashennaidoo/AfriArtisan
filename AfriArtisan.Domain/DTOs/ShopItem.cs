@@ -9,7 +9,7 @@ namespace AfriArtisan.Domain.DTOs
     public class ShopItem
     {
         public Product Product { get; set; }
-        public int Quantity { get; set; }
+        public decimal Quantity { get; set; }
 
         // Quantity * ProductCost
         public decimal ItemCost { get; set; }

@@ -160,6 +160,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -275,10 +276,76 @@
     <Content Include="img\3-506x195_t.jpg" />
     <Content Include="img\4-506x195_t.jpg" />
     <Content Include="img\7-506x195_t.jpg" />
-    <Content Include="img\about\1.jpg" />
-    <Content Include="img\about\2.jpg" />
-    <Content Include="img\about\3.jpg" />
-    <Content Include="img\about\4.jpg" />
+    <Content Include="img\assets\banner\Banner 01.png" />
+    <Content Include="img\assets\banner\Banner 02.png" />
+    <Content Include="img\assets\banner\Banner 03 %281%29.png" />
+    <Content Include="img\assets\banner\Banner 03.png" />
+    <Content Include="img\assets\banner\Banner 04 %281%29.png" />
+    <Content Include="img\assets\banner\Banner 04.png" />
+    <Content Include="img\assets\decorations\02-01-00-01.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-02.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-03.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-04%282%29.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-04.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-05%282%29.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-05.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-06%282%29.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-06.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-07.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-08.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-18.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-19.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-20.JPG" />
+    <Content Include="img\assets\decorations\02-01-00-21.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-22.jpg" />
+    <Content Include="img\assets\decorations\02-01-00-23.jpg" />
+    <Content Include="img\assets\earrings\01-01-00-13.jpg" />
+    <Content Include="img\assets\earrings\01-01-00-14.jpg" />
+    <Content Include="img\assets\earrings\01-01-00-15.jpg" />
+    <Content Include="img\assets\earrings\01-01-00-16.jpg" />
+    <Content Include="img\assets\earrings\01-01-00-17.jpg" />
+    <Content Include="img\assets\earrings\01-01-01-26.jpg" />
+    <Content Include="img\assets\earrings\01-01-01-28.jpg" />
+    <Content Include="img\assets\earrings\01-01-01-30.jpg" />
+    <Content Include="img\assets\earrings\01-01-02-32.jpg" />
+    <Content Include="img\assets\earrings\01-01-03-38.jpg" />
+    <Content Include="img\assets\earrings\01-01-03-40.jpg" />
+    <Content Include="img\assets\earrings\01-01-04-41.jpg" />
+    <Content Include="img\assets\earrings\01-01-04-43.jpg" />
+    <Content Include="img\assets\earrings\01-01-05-47.jpg" />
+    <Content Include="img\assets\IMG_8751.jpg" />
+    <Content Include="img\assets\IMG_8779.jpg" />
+    <Content Include="img\assets\IMG_8806.jpg" />
+    <Content Include="img\assets\IMG_8862.jpg" />
+    <Content Include="img\assets\IMG_8874.jpg" />
+    <Content Include="img\assets\IMG_8879.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-09%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-09.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-10%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-10.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-11%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-11.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-12%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-00-12.jpg" />
+    <Content Include="img\assets\necklaces\01-02-01-25.jpg" />
+    <Content Include="img\assets\necklaces\01-02-01-31%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-01-31.jpg" />
+    <Content Include="img\assets\necklaces\01-02-02-35%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-02-35.jpg" />
+    <Content Include="img\assets\necklaces\01-02-03-37.jpg" />
+    <Content Include="img\assets\necklaces\01-02-04-44%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-04-44.jpg" />
+    <Content Include="img\assets\necklaces\01-02-05-48%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-05-48.jpg" />
+    <Content Include="img\assets\necklaces\01-02-06-50.jpg" />
+    <Content Include="img\assets\necklaces\01-02-06-51%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-06-51.jpg" />
+    <Content Include="img\assets\necklaces\01-02-07-54.jpg" />
+    <Content Include="img\assets\necklaces\01-02-07-55%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-07-55.jpg" />
+    <Content Include="img\assets\necklaces\01-02-08-57.jpg" />
+    <Content Include="img\assets\necklaces\01-02-08-59%282%29.jpg" />
+    <Content Include="img\assets\necklaces\01-02-08-59.jpg" />
     <Content Include="img\banner\Banner 01.png" />
     <Content Include="img\banner\Banner 02.png" />
     <Content Include="img\banner\Banner 03.png" />
@@ -414,9 +481,12 @@
     <Content Include="Views\User\SignIn.cshtml" />
     <Content Include="Views\Shop\Index.cshtml" />
     <Content Include="Views\Shop\Detail.cshtml" />
+    <Content Include="Views\User\SignUp.cshtml" />
+    <Content Include="Views\Shop\ViewCart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\assets\gallery\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
