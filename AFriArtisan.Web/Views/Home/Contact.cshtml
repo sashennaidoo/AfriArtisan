@@ -1,32 +1,65 @@
-﻿
+﻿@model AFriArtisan.Web.Models.Contact
+
 @{
     ViewBag.Title = "Contact Us";
 }
+
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<div class="panel-layout">
+    <div class="textwidget">
+        <div class="main-container  contact_form" style="padding:40px 0 0;margin:0;overflow:hidden;background-repeat:no-repeat;">
+            <div class="inner-container">
+                    <div class="content_inner" style="margin:0;width:90%;">
+                        <div class="shortcode-title left"><h1 class="simple-type small-title">Contact Form</h1></div><div role="form" class="wpcf7" id="wpcf7-f5182-p3465-o3" lang="en-US" dir="ltr">
+                            <div class="screen-reader-response"></div>
 
-    <div class="input-group col-lg-12">
-        <labe class="form__label">Name</labe>
-        <input id="txt_name" type="text" class="text" />
-        <span class="input-group-addon"><span class="fa fa-user"></span></span>
+                        @Html.BeginForm("Contact", "Home", FormMethod.Post)
+                        {
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="5182">
+                                    <input type="hidden" name="_wpcf7_version" value="5.0">
+                                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5182-p3465-o3">
+                                    <input type="hidden" name="_wpcf7_container_post" value="3465">
+                                </div>
+                                <div class="contact-input contact-subject">
+                                    Subject<br>
+                                    <span class="wpcf7-form-control-wrap your-subject">
+                                        <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false">
+                                    </span>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="contact-input contact-name">
+                                        Your Name (required)<br>
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                            @Html.EditorFor(model => model.Name, new { @class = "wpcf7-form-control wpcf7-text wpcf7-validates-as-required" })
+                                            @Html.ValidationMessageFor(model => model.Name)
+                                        </span>
+                                    </div>
+                                    <div class="contact-input contact-mail">
+                                        Your Email (required)<br>
+                                        <span class="wpcf7-form-control-wrap your-email">
+                                            @Html.EditorFor(model => model.Email, new { @class = "wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" })
+                                            @Html.ValidationMessageFor(model => model.Email)
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="contact-textarea contact-textarea">
+                                    Your Message<br>
+                                    <span class="wpcf7-form-control-wrap your-message">
+                                        @Html.TextAreaFor(model => model.Message, new { @class = "wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" })
+                                        @Html.ValidationMessageFor(model => model.Name)
+                                        <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>
+                                    </span>
+                                </div>
+                                <p><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></p>
+                                <div class="wpcf7-response-output wpcf7-display-none"></div>
+                        
+                        }
+                           <div class="post-description">@ViewBag.SendMessage</div> 
+                        </div>
+                    </div>
+            </div>
+        </div>
     </div>
-
-    <div class="input-group col-lg-12">
-        <labe class="form__label">Email Address</labe>
-        <input id="txt_email" type="text" class="text" />
-        <span class="input-group-addon"><span class="fa fa-envelope"></span></span>
-    </div>
-
-    <div class="input-group col-lg-12">
-        <labe class="form__label">Enquiry</labe>
-        <textarea id="" type="text" class="text" />
-    </div>
-
-    <div class="input-group col-lg-12">
-        <input id="" type="submit"  class="submit" />
-    </div>
-
-
-</div>

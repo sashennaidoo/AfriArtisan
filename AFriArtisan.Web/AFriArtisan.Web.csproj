@@ -160,6 +160,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contact.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +177,9 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\front-flex.css" />
+    <Content Include="Content\heroslider\font.css" />
+    <Content Include="Content\heroslider\reset.css" />
+    <Content Include="Content\heroslider\style.css" />
     <Content Include="Content\images\megnor\01-279x326.jpg" />
     <Content Include="Content\images\megnor\02-279x326.jpg" />
     <Content Include="Content\images\megnor\03-279x326.jpg" />
@@ -222,9 +226,16 @@
     <Content Include="Content\index-ba4e430b158076b9211df30e6996ef729557befcda55ccb06513ac7c11c255fc.css" />
     <Content Include="Content\isotop-port.css" />
     <Content Include="Content\jquery.selectBox.css" />
+    <Content Include="Content\metaslider\animate.css" />
+    <Content Include="Content\metaslider\assets.css" />
+    <Content Include="Content\metaslider\flexslider.css" />
+    <Content Include="Content\metaslider\public.css" />
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\owl.transitions.css" />
     <Content Include="Content\prettyPhoto.css" />
+    <Content Include="Content\responsive-slider\icomoon.svg" />
+    <Content Include="Content\responsive-slider\responsive-layered-slider.css" />
+    <Content Include="Content\responsive-slider\style.css" />
     <Content Include="Content\responsive.css" />
     <Content Include="Content\settings.css" />
     <Content Include="Content\shadowbox.css" />
@@ -264,6 +275,10 @@
     <Content Include="img\3-506x195_t.jpg" />
     <Content Include="img\4-506x195_t.jpg" />
     <Content Include="img\7-506x195_t.jpg" />
+    <Content Include="img\about\1.jpg" />
+    <Content Include="img\about\2.jpg" />
+    <Content Include="img\about\3.jpg" />
+    <Content Include="img\about\4.jpg" />
     <Content Include="img\banner\Banner 01.png" />
     <Content Include="img\banner\Banner 02.png" />
     <Content Include="img\banner\Banner 03.png" />
@@ -278,6 +293,7 @@
     <Content Include="img\Brand8.png" />
     <Content Include="img\footer-logo.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\logo\logo.PNG" />
     <Content Include="img\main1.jpg" />
     <Content Include="img\main11.jpg" />
     <Content Include="img\main2.jpg" />
@@ -293,6 +309,7 @@
     <Content Include="img\user3-60x60_left.png" />
     <Content Include="img\user6-60x60_left.png" />
     <Content Include="img\user7-60x60_left.png" />
+    <Content Include="img\white.png" />
     <Content Include="img\wpspin_light.gif" />
     <Content Include="Scripts\add-to-cart-variation.min.js" />
     <Content Include="Scripts\add-to-cart.min.js" />
@@ -307,6 +324,9 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="fonts\star.woff" />
+    <Content Include="Content\responsive-slider\icomoon.eot" />
+    <Content Include="Content\responsive-slider\icomoon.ttf" />
+    <Content Include="Content\responsive-slider\icomoon.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\carousel.min.js" />
     <Content Include="Scripts\cart-fragments.min.js" />
@@ -317,6 +337,7 @@
     <Content Include="Scripts\ec.js" />
     <Content Include="Scripts\frontend.min.js" />
     <Content Include="Scripts\functions.js" />
+    <Content Include="Scripts\heroslider\main.js" />
     <Content Include="Scripts\html5.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -325,7 +346,10 @@
     <Content Include="Scripts\jquery.blockUI.min.js" />
     <Content Include="Scripts\jquery.colorbox-min.js" />
     <Content Include="Scripts\jquery.custom.min.js" />
+    <Content Include="Scripts\jQuery.easing.min.js" />
     <Content Include="Scripts\jquery.easypiechart.min.js" />
+    <Content Include="Scripts\jquery.flexslider-min.js" />
+    <Content Include="Scripts\jquery.flexslider.js" />
     <Content Include="Scripts\jquery.form.min.js" />
     <Content Include="Scripts\jquery.formalize.min.js" />
     <Content Include="Scripts\jquery.inview.js" />
@@ -350,6 +374,8 @@
     <Content Include="Scripts\linkid.js" />
     <Content Include="Scripts\megnor.min.js" />
     <Content Include="Scripts\megnorloadmore.js" />
+    <Content Include="Scripts\metaslider\pro.js" />
+    <Content Include="Scripts\metaslider\pub.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\navigation.js" />
     <Content Include="Scripts\nr-1044.min.js" />
@@ -357,6 +383,7 @@
     <Content Include="Scripts\parallex.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\responsive-slider\responsive-layered-slider.js" />
     <Content Include="Scripts\scripts.js" />
     <Content Include="Scripts\shadowbox.js" />
     <Content Include="Scripts\underscore.min.js" />
@@ -390,7 +417,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

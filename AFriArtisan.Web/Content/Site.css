@@ -22,3 +22,34 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+.site-main {
+    padding-top: 44px!important;
+}
+
+.post-image-center {
+    margin: auto!important;
+    display: block;
+}
+
+.lock-height-300 {
+    height:320px!important;
+}
+
+.home-blog {
+    padding-top: 10px!important;
+}
+
+.post-description {
+      font-family: "Domine",Arial,Helvetica,sans-serif;
+}
+
+.blog-posts-content .post-image {
+    border: none!important;
+}
+
+.textwidget {
+    margin: auto!important;
+    width: 90%!important;
+}

@@ -28,13 +28,13 @@ namespace AFriArtisan.Web.Controllers
             return View(product);
         }
 
-        public JsonResult AddToCart(int productId, int qty)
-        {
-            var cart = ViewData["Cart"];
-            if (cart == null)
-                cart = new Dictionary<int, decimal>();
-            cart.Equals
+        //public JsonResult AddToCart(int productId, int qty)
+        //{
+        //    var cart = ViewData["Cart"];
+        //    if (cart == null)
+        //        cart = new Dictionary<int, decimal>();
+        //    cart.Equals
 
-        }
+        //}
     }
 }

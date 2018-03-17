@@ -5,176 +5,290 @@
     <div id="yith-wcwl-popup-message" style="display: none;"><div id="yith-wcwl-message"></div></div>
 
     <div id="page" class="hfeed site">
-
+        <link href="~/Content/heroslider/font.css" rel="stylesheet" />
+        <link href="~/Content/heroslider/style.css" rel="stylesheet" />
+        <link href="~/Content/heroslider/reset.css" rel="stylesheet" />
         <!-- #masthead -->
         <!-- Center -->
         <div id="main" class="site-main extra">
             <div class="main_inner">
-                <!-- #region Jssor Slider Begin -->
-                <!-- Generator: Jssor Slider Maker -->
-                <!-- Source: https://www.jssor.com -->
-                <script src="~/Scripts/jssor.slider.min.js" type="text/javascript"></script>
-                <script type="text/javascript">
-                    jssor_1_slider_init = function () {
+                <section class="cd-hero js-cd-hero js-cd-autoplay">
+                    <!-- #region Jssor Slider Begin -->
+                    <!-- Generator: Jssor Slider Maker -->
+                    <!-- Source: https://www.jssor.com -->
+                    @*<script type="text/javascript">
+                jssor_1_slider_init = function () {
 
-                        var jssor_1_SlideshowTransitions = [
-                            { $Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
-                            { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
-                        ];
+                    var jssor_1_SlideshowTransitions = [
+                        { $Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 },
+                        { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear }, $Opacity: 2 }
+                    ];
 
-                        var jssor_1_options = {
-                            $AutoPlay: 1,
-                            $SlideshowOptions: {
-                                $Class: $JssorSlideshowRunner$,
-                                $Transitions: jssor_1_SlideshowTransitions,
-                                $TransitionsOrder: 1
-                            },
-                            $ArrowNavigatorOptions: {
-                                $Class: $JssorArrowNavigator$
-                            },
-                            $ThumbnailNavigatorOptions: {
-                                $Class: $JssorThumbnailNavigator$,
-                                $Cols: 1,
-                                $Orientation: 2,
-                                $Align: 0,
-                                $NoDrag: true
-                            }
-                        };
-
-                        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-                        /*#region responsive code begin*/
-
-                        var MAX_WIDTH = 980;
-
-                        function ScaleSlider() {
-                            var containerElement = jssor_1_slider.$Elmt.parentNode;
-                            var containerWidth = containerElement.clientWidth;
-
-                            if (containerWidth) {
-
-                                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                                jssor_1_slider.$ScaleWidth(expectedWidth);
-                            }
-                            else {
-                                window.setTimeout(ScaleSlider, 30);
-                            }
+                    var jssor_1_options = {
+                        $AutoPlay: 1,
+                        $SlideshowOptions: {
+                            $Class: $JssorSlideshowRunner$,
+                            $Transitions: jssor_1_SlideshowTransitions,
+                            $TransitionsOrder: 1
+                        },
+                        $ArrowNavigatorOptions: {
+                            $Class: $JssorArrowNavigator$
+                        },
+                        $ThumbnailNavigatorOptions: {
+                            $Class: $JssorThumbnailNavigator$,
+                            $Cols: 1,
+                            $Orientation: 2,
+                            $Align: 0,
+                            $NoDrag: true
                         }
-
-                        ScaleSlider();
-
-                        $Jssor$.$AddEvent(window, "load", ScaleSlider);
-                        $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-                        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-                        /*#endregion responsive code end*/
                     };
-                </script>
-                <style>
-        /* jssor slider loading skin spin css */
-        .jssorl-009-spin img {
-            animation-name: jssorl-009-spin;
-            animation-duration: 1.6s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
 
-        @@keyframes jssorl-009-spin {
-            from {
-                transform: rotate(0deg);
-            }
+                    var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-            to {
-                transform: rotate(360deg);
-            }
-        }
+                    /*#region responsive code begin*/
+
+                    //var MAX_WIDTH = 100%;
+
+                    function ScaleSlider() {
+                        var containerElement = jssor_1_slider.$Elmt.parentNode;
+                        var containerWidth = containerElement.clientWidth;
+
+                        if (containerWidth) {
+
+                            var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                            jssor_1_slider.$ScaleWidth(expectedWidth);
+                        }
+                        else {
+                            window.setTimeout(ScaleSlider, 30);
+                        }
+                    }
+
+                    ScaleSlider();
+
+                    $Jssor$.$AddEvent(window, "load", ScaleSlider);
+                    $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+                    $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+                    /*#endregion responsive code end*/
+                };
+            </script>*@
+
+                    <ul class="cd-hero__slider">
+                        <li class="cd-hero__slide js-cd-slide cd-hero__slide--move-left">
+                            <div class="cd-hero__content cd-hero__content--half-width cd-hero__slide--move-left cd-hero__content--img">
+                                <img src="~/img/logo/logo.PNG" alt="tech 1" style="height:100%;">
+                            </div> <!-- .cd-hero__content -->
+
+                            <div class="cd-hero__content cd-hero__content--full-width">
+                                <h2>Afri Artisan</h2>
+                                <p>Splurb here</p>
+                            </div> <!-- .cd-hero__content -->
+                        </li>
+
+                        <li class="cd-hero__slide js-cd-slide cd-hero__slide--selected cd-hero__slide--from-right">
+
+                            <div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img">
+                                <img src="~/img/banner/Banner 01.png" alt="tech 1" style="width:100%;">
+                            </div> <!-- .cd-hero__content -->
+
+                            <div class="cd-hero__content cd-hero__content--full-width">
+                                <h2>Buy Authentic Africa Jems</h2>
+                                <p>Check out our store for a wide selection of jewellery to choose from</p>
+                                <a href="#0" class="cd-hero__btn">Shop Now</a>
+                            </div> <!-- .cd-hero__content -->
+
+                        </li>
+
+                        <li class="cd-hero__slide js-cd-slide">
+                            <div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img">
+                                <img src="~/img/banner/Banner 02.png" alt="tech 2" style="width:100%;">
+                            </div> <!-- .cd-hero__content -->
+
+                            <div class="cd-hero__content cd-hero__content--full-width">
+                                <h2>Contact Us</h2>
+                                <p>For Bulk Orders and Wholesale Prices</p>
+                                <a href="#0" class="cd-hero__btn">Contact Us</a>
+                            </div> <!-- .cd-hero__content -->
+
+                        </li>
 
 
-        .jssora061 {display:block;position:absolute;cursor:pointer;}
-        .jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
-        .jssora061:hover {opacity:.8;}
-        .jssora061.jssora061dn {opacity:.5;}
-        .jssora061.jssora061ds {opacity:.3;pointer-events:none;}
-                </style>
-                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
-                    <!-- Loading Screen -->
-                    <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
-                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="../svg/loading/static-svg/spin.svg" />
+                        <li class="cd-hero__slide js-cd-slide">
+                            <div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img">
+                                <img src="~/img/banner/Banner 03.png" alt="tech 2" style="width:100%;">
+                            </div> <!-- .cd-hero__content -->
+
+                            <div class="cd-hero__content cd-hero__content--full-width">
+                                <h2>Slide title here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+                                <a href="#0" class="cd-hero__btn">Start</a>
+                                <a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a>
+                            </div> <!-- .cd-hero__content -->
+                        </li>
+
+                        <li class="cd-hero__slide js-cd-slide">
+                            <div class="cd-hero__content cd-hero__content--full-width cd-hero__content--img">
+                                <img src="~/img/banner/Banner 04.png" alt="tech 2" style="width:100%;">
+                            </div> <!-- .cd-hero__content -->
+
+                            <div class="cd-hero__content cd-hero__content--full-width">
+                                <h2>Slide title here</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+                                <a href="#0" class="cd-hero__btn">Start</a>
+                                <a href="#0" class="cd-hero__btn cd-hero__btn--secondary">Learn More</a>
+                            </div> <!-- .cd-hero__content -->
+                        </li>
+
+                    </ul>
+                    <div class="cd-hero__nav js-cd-nav">
+                        <nav>
+                            <span class="cd-hero__marker js-cd-marker cd-hero__marker--item-2"></span>
+
+                            <ul>
+                                <li class="cd-selected"><a href="#0">Intro</a></li>
+                                <li class=""><a href="#0">Tech 1</a></li>
+                                <li class=""><a href="#0">Tech 2</a></li>
+                                <li class=""><a href="#0">Video</a></li>
+                                <li class=""><a href="#0">Image</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
-                        <div>
-                            <img data-u="image" src="~/img/banner/Banner 01.png" />
-                            <div data-u="thumb">Decorations</div>
-                        </div>
-                        <div>
-                            <img data-u="image" src="~/img/banner/Banner 02.png" />
-                            <div data-u="thumb">Bracelets
-                            </div>
-                        </div>
-                        <div>
-                            <img data-u="image" src="~/img/banner/Banner 03.png" />
-                            <div data-u="thumb">Earrings</div>
-                        </div>
-                        <div>
-                            <img data-u="image" src="~/img/banner/Banner 04.png" />
-                            <div data-u="thumb">Gifts</div>
-                        </div>
-                        
-                        <div style="background-color:#ff7c28;">
-                            <div style="position:absolute;top:50px;left:50px;width:450px;height:62px;z-index:0;font-size:16px;color:#000000;line-height:24px;text-align:left;padding:5px;box-sizing:border-box;">
-                                Photos in this slider are to demostrate jssor slider,<br />
-                                which are not licensed for any other purpose.
-                            </div>
-                            <div data-u="thumb">Terms of use photos in this slider</div>
-                        </div>
-                    </div>
-                    <!-- Thumbnail Navigator -->
-                    <div data-u="thumbnavigator" style="position:absolute;bottom:0px;left:0px;width:980px;height:50px;color:#FFF;overflow:hidden;cursor:default;background-color:rgba(0,0,0,.5);">
-                        <div data-u="slides">
-                            <div data-u="prototype" style="position:absolute;top:0;left:0;width:980px;height:50px;">
-                                <div data-u="thumbnailtemplate" style="position:absolute;top:0;left:0;width:100%;height:100%;font-family:verdana;font-weight:normal;line-height:50px;font-size:16px;padding-left:10px;box-sizing:border-box;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Arrow Navigator -->
-                    <div data-u="arrowleft" class="jssora061" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
-                        <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <path class="a" d="M11949,1919L5964.9,7771.7c-127.9,125.5-127.9,329.1,0,454.9L11949,14079"></path>
-                        </svg>
-                    </div>
-                    <div data-u="arrowright" class="jssora061" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
-                        <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                            <path class="a" d="M5869,1919l5984.1,5852.7c127.9,125.5,127.9,329.1,0,454.9L5869,14079"></path>
-                        </svg>
-                    </div>
-                </div>
-                <script type="text/javascript">jssor_1_slider_init();</script>
-                <!-- #endregion Jssor Slider End -->
-                @*<div class="top_main">
-            <div class="topbar-banner theme-container">
-                <div class="top-banner-inner container"><ul class="top-banner-container"><li class="content1 content"><div class="content-inner"><div class="cms-img-bg"><div class="top-cms-icon"></div></div><div class="cms-title">100% Money Back Gaurantee</div></div></li><li class="content2 content"><div class="content-inner"><div class="cms-img-bg"><div class="top-cms-icon"></div></div><div class="cms-title">Free Shipping Worldwide</div></div></li><li class="content3 content"><div class="content-inner"><div class="cms-img-bg"><div class="top-cms-icon"></div></div><div class="cms-title">Special Occassion Gift Cards</div></div></li></ul></div>
-            </div>
-        </div>*@
+                    </section>
 
-                <!-- End main slider -->
-                <div class="main-content-inner-full">
-                    <div id="main-content" class="main-content home-page full-width box-page">
-                        <div id="primary" class="content-area">
-                            <div id="content" class="site-content" role="main">
-                                <article id="post-2712" class="post-2712 page type-page status-publish hentry">
-                                    <div class="entry-content">
-                                        <div id="pl-2712" class="panel-layout">
-                                            <div id="pg-2712-0" class="panel-grid panel-no-style">
-                                                <div id="pgc-2712-0-0" class="panel-grid-cell">
-                                                    <div id="panel-2712-0-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="0">
-                                                        <h3 class="widget-title">Home Product Tab</h3>
-                                                        <div class="textwidget">
-                                                            <div class="main-container  category_tab home-product" style="background-color: #f7f7f7;padding:42px 0 40px;margin:0;overflow:hidden;background-repeat:no-repeat;">
-                                                                <div class="inner-container">
-                                                                    <div class="shortcode-title center"><h1 class="simple-type small-title">OUR STORY</h1></div>
-                                                                    <div class="col-lg-12 col-md-12">
+                    <script src="~/Scripts/heroslider/main.js"></script>
 
-                                                                    </div>
+
+                    <!-- End main slider -->
+                    <div class="main-content-inner-full">
+                        <div id="main-content" class="main-content home-page full-width box-page">
+                            <div id="primary" class="content-area">
+                                <div id="content" class="site-content" role="main">
+                                    <article id="post-2712" class="post-2712 page type-page status-publish hentry">
+                                        <div class="entry-content">
+                                            <div id="pl-2712" class="panel-layout">
+                                                <div id="pg-2712-0" class="panel-grid panel-no-style">
+                                                    <div id="pgc-2712-0-0" class="panel-grid-cell">
+                                                        <div id="panel-2712-0-0-0" class="so-panel widget widget_black-studio-tinymce widget_black_studio_tinymce panel-first-child panel-last-child" data-index="0">
+                                                            <h3 class="widget-title">Home Product Tab</h3>
+                                                            <div class="textwidget">
+                                                                <div class="main-container  category_tab home-product" style="background-color: #f7f7f7;padding:42px 0 40px;margin:0;overflow:hidden;background-repeat:no-repeat;">
+                                                                    <div class="inner-container">
+                                                                        <div class="shortcode-title center"><h1 class="simple-type small-title">OUR STORY</h1></div>
+                                                                        <div class="col-lg-12 col-md-12">
+                                                                            <div class="description">
+                                                                                Through the sale of handmade goods, Afri Artisan is primarily aimed at creating and sustaining employment for those in need. Although our artisans were not afforded the luxury of formal education, they are exceptionally skilled in their own right.  Artisans have a range of skills and talent but are not always in a position to convert their abilities into sustainable livelihoods. Afri Artisan provides a platform, connecting artisans with a global market. Through guidance on topics such as trends and quality, an artisan’s creations become more saleable. Afri Artisan is based in Durban, Kwa Zulu Natal.
+                                                                            </div>
+                                                                            <div class="shortcode-title center"><h1 class="simple-type small-title">OUR ARTISANS</h1></div>
+                                                                            <div class="one_half home-blog">
+                                                                                <div class="one_half_inner content_inner right" style="margin:0;width:100%;">
+                                                                                <div class="shortcode-title center">
+                                                                                    <h1 class="simple-type small-title">Sylvia Shozi</h1>
+                                                                                </div>
+                                                                                <div id="blog-posts-products" class="blog-posts-content posts-content">
+                                                                                <div id="1_blog_carousel" class="slider blog-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                                                                    <div class="owl-wrapper-outer">
+                                                                                        <div class="owl-wrapper" style="width: 3372px; left: 0px; display: block;">
+                                                                                        <div class="owl-item" style="width: 562px;">
+                                                                                            <div class="item container  last">
+                                                                                                <div class="container-inner">
+                                                                                                    <div class="post-image post-image-center">
+                                                                                                        <img src="~/img/about/1.jpg" class="post-image-center" alt="Sylvia Shozi" />
+                                                                                                  </div>
+                                                                                                    <div class="post-description">Sylvia is a single mum of 2. Beading is a skill that has transcended generations in the Shozi family. Slyvia dreams of being able to fund her children’s tertiary education. 
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                </div>
+                                                                                </div>
+                                                                                </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                            <div class="one_half home-blog">
+                                                                                <div class="one_half_inner content_inner right" style="margin:0;width:100%;">
+                                                                                    <div class="shortcode-title center">
+                                                                                        <h1 class="simple-type small-title">Clyveria Radebe</h1>
+                                                                                    </div>
+                                                                                    <div id="blog-posts-products" class="blog-posts-content posts-content">
+                                                                                        <div id="1_blog_carousel" class="slider blog-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                                                                            <div class="owl-wrapper-outer">
+                                                                                                <div class="owl-wrapper" style="width: 3372px; left: 0px; display: block;">
+                                                                                                    <div class="owl-item" style="width: 562px;">
+                                                                                                        <div class="item container  last">
+                                                                                                            <div class="container-inner">
+                                                                                                                <div class="post-image post-image-center">
+                                                                                                                    <img src="~/img/about/2.jpg" class="post-image-center lock-height-300" alt="Clyveria Radebe" />
+                                                                                                                </div>
+                                                                                                                <div class="post-description">
+                                                                                                                    Clyveria was employed as a domestic worker and is now thrilled to be earning an income through sewing. Clyveria loves to sew. Adorable fabric toys and decorations are her speciality.
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                            <div class="one_half home-blog">
+                                                                                <div class="one_half_inner content_inner right" style="margin:0;width:100%;">
+                                                                                    <div class="shortcode-title center">
+                                                                                        <h1 class="simple-type small-title">Patricia Hadebe</h1>
+                                                                                    </div>
+                                                                                    <div id="blog-posts-products" class="blog-posts-content posts-content">
+                                                                                        <div id="1_blog_carousel" class="slider blog-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                                                                            <div class="owl-wrapper-outer">
+                                                                                                <div class="owl-wrapper" style="width: 3372px; left: 0px; display: block;">
+                                                                                                    <div class="owl-item" style="width: 562px;">
+                                                                                                        <div class="item container  last">
+                                                                                                            <div class="container-inner">
+                                                                                                                <div class="post-image post-image-center">
+                                                                                                                    <img src="~/img/about/3.jpg" class="post-image-center lock-height-300" alt="Patricia Hadebe" />
+                                                                                                                </div>
+                                                                                                                <div class="post-description">
+                                                                                                                    Through beading alone, Patricia supports herself and her 2 children. The Hadebes produce a wide range of beaded items. Work is shared between Patricia’s mum and her 8 daughters to ensure a steady income for all.
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="one_half home-blog">
+                                                                                <div class="one_half_inner content_inner right" style="margin:0;width:100%;">
+                                                                                    <div class="shortcode-title center">
+                                                                                        <h1 class="simple-type small-title">Phillimon Munaro </h1>
+                                                                                    </div>
+                                                                                    <div id="blog-posts-products" class="blog-posts-content posts-content">
+                                                                                        <div id="1_blog_carousel" class="slider blog-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                                                                            <div class="owl-wrapper-outer">
+                                                                                                <div class="owl-wrapper" style="width: 3372px; left: 0px; display: block;">
+                                                                                                    <div class="owl-item" style="width: 562px;">
+                                                                                                        <div class="item container  last">
+                                                                                                            <div class="container-inner">
+                                                                                                                <div class="post-image post-image-center">
+                                                                                                                    <img src="~/img/about/4.jpg" class="post-image-center lock-height-300" alt="Phillimon Munaro" />
+                                                                                                                </div>
+                                                                                                                <div class="post-description">
+                                                                                                                    Originally from Zimbabwe, Phillimon arrived in South Africa in search of employment. Wire craft is Phil’s forte. Phil supports his wife and children in South Africa as well as his siblings in Zimbabwe. 
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -182,28 +296,17 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </article>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
+</div>
         </div>
     </div>
 </div>
-<script type="text/javascript">
-            function revslider_showDoubleJqueryError(sliderID) {
-                var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
-                errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
-                errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
-                errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
-                errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
-                jQuery(sliderID).show().html(errorMessage);
-            }
-</script>
-<script type="text/template" id="tmpl-variation-template">
+@*<script type="text/template" id="tmpl-variation-template">
     <div class="woocommerce-variation-description">
         {{{ data.variation.variation_description }}}
     </div>
@@ -213,11 +316,13 @@
     <div class="woocommerce-variation-availability">
         {{{ data.variation.availability_html }}}
     </div>
-</script>
-<script type="text/template" id="tmpl-unavailable-variation-template">
+</script>*@
+
+
+@*<script type="text/template" id="tmpl-unavailable-variation-template">
     <p>Sorry, this product is unavailable. Please choose a different combination.</p>
 </script>
-<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js", "");</script>
+<script type="text/javascript">document.body.className = document.body.className.replace("siteorigin-panels-before-js", "");</script>*@
 <!-- Dynamic page generated in 9.076 seconds. -->
 <!-- Cached page generated by WP-Super-Cache on 2017-11-19 11:53:37 -->
 <!-- Compression = gzip --><div id="cboxOverlay" style="display: none;"></div>

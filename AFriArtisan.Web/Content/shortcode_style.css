@@ -1859,7 +1859,7 @@ Blogpost style 2nd Start
 
 .blog-posts-content  .post-image {
     border: 1px solid #ebebeb;
-    margin: 0 0 10px;
+    /*margin: 0 0 10px;*/
 }
 .blog-posts-content  .post-content-inner {  
     padding: 10px 0 0;

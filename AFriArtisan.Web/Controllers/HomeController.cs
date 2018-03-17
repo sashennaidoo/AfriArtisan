@@ -1,4 +1,5 @@
 ﻿using AfriArtisan.Service.Builders;
+using AFriArtisan.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,11 +25,20 @@ namespace AFriArtisan.Web.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Should you have any queries, feel free to contact us.";
-
-            return View();
+            ViewBag.SendMessage = "";
+            var contact = new Contact();
+            return View(contact);
         }
+
+        [HttpPost]
+        public ActionResult Contact(Contact contact)
+        {
+            // email the stuff and print a message
+            ViewBag.SendMessage = "Your request has been sent!"
+        }
+
     }
 }

@@ -16,7 +16,7 @@
 CREATE DATABASE IF NOT EXISTS `afri_artisan` /*!40100 DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci */;
 USE `afri_artisan`;
 
--- Dumping structure for table afri_artisan.ta_pil_product_image_location
+-- Dumping structure for table afri_artisan.ta_pil_product_image_locationtm_odd_order_detailtm_odd_order_detail
 CREATE TABLE IF NOT EXISTS `ta_pil_product_image_location` (
   `pil_code` int(11) NOT NULL AUTO_INCREMENT,
   `prd_code` int(11) NOT NULL,
