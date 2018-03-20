@@ -12,9 +12,6 @@ namespace AFriArtisan.Web.Controllers
     {
         public ActionResult Index()
         {
-            //new ProductTypeBuilder().AddProductType("Bracelet", true);
-            var prodTypes = new ProductTypeBuilder().GetAllProductTypes();
-            var prods = new ProductBuilder().GetProductByType(1);
             return View();
         }
 
@@ -33,12 +30,13 @@ namespace AFriArtisan.Web.Controllers
             return View(contact);
         }
 
-        [HttpPost]
-        public ActionResult Contact(Contact contact)
-        {
-            // email the stuff and print a message
-            ViewBag.SendMessage = "Your request has been sent!"
-        }
+        //[HttpPost]
+        //public ActionResult Contact(Contact contact)
+        //{
+        //    // email the stuff and print a message
+        //    ViewBag.SendMessage = "Your request has been sent!";
+
+        //}
 
     }
 }

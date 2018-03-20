@@ -4,6 +4,7 @@ using AFriArtisan.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Web;
 using System.Web.Helpers;
 using System.Web.Mvc;
@@ -12,6 +13,7 @@ namespace AFriArtisan.Web.Controllers
 {
     public class ShopController : Controller
     {
+
         // GET: Shop
         public ActionResult Index(int? productTypeId = null)
         {
@@ -53,7 +55,7 @@ namespace AFriArtisan.Web.Controllers
             var sessionCart = Cart.Current;
             var shoppingCart = new ShoppingCart();
             var builder = new ProductBuilder();
-            foreach(var item in sessionCart.Products)
+            foreach (var item in sessionCart.Products)
             {
                 var product = builder.GetAllProducts().FirstOrDefault(c => c.Code == item.Key);
                 shoppingCart.Cart.Add(new ShopItem
@@ -63,6 +65,7 @@ namespace AFriArtisan.Web.Controllers
                     Quantity = item.Value
                 });
 
+            }
+
         }
-    }
 }

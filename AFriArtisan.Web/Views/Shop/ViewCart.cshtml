@@ -27,38 +27,40 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach (var prod in Model.Cart)
+                                        {
+                                            <tr class="woocommerce-cart-form__cart-item cart_item">
 
-                                        <tr class="woocommerce-cart-form__cart-item cart_item">
+                                                <td class="product-remove">
+                                                    <a href="#" onclick="removeItem(@prod.Product.Code)" class="remove" aria-label="Remove this item" data-product_id="2371" data-product_sku="Prod003">×</a>
+                                                </td>
+                                                <td class="product-thumbnail"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/aliquam-risus/"><img width="279" height="326" src="@prod.Product.ProductImages.FirstOrDefault(c => c.ImageType == AfriArtisan.Domain.Enums.ImageType.Thumbnail)" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""></a></td>
 
-                                            <td class="product-remove">
-                                                <a href="http://demos.templatemela.com/woo/WCM02/WCM020029/cart/?remove_item=0a65e195cb51418279b6fa8d96847a60&amp;_wpnonce=247ddde95a" class="remove" aria-label="Remove this item" data-product_id="2371" data-product_sku="Prod003">×</a>
-                                            </td>
+                                                <td class="product-name" data-title="Product">@Html.ActionLink(prod.Product.Description, "Shop", "Detail", new { productId = prod.Product.Code })</td>
 
-                                            <td class="product-thumbnail"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/aliquam-risus/"><img width="279" height="326" src="//demos.templatemela.com/woo/WCM02/WCM020029/wp-content/uploads/2016/04/19-279x326.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail wp-post-image" alt=""></a></td>
+                                                <td class="product-price" data-title="Price">
+                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">R</span>@prod.Product.Cost</span>
+                                                </td>
 
-                                            <td class="product-name" data-title="Product"><a href="http://demos.templatemela.com/woo/WCM02/WCM020029/product/aliquam-risus/">Aliquam Risus Earings</a></td>
+                                                <td class="product-quantity" data-title="Quantity">
+                                                    <div class="quantity">
+                                                        <label class="screen-reader-text" for="quantity_5aacdd2f0c77b">Quantity</label>
+                                                        @Html.EditorFor(model => model.Cart.Count, new { @class = "input-text qty text", @step = 1, @min = 0, @max = 10 })
+                                                    </div>
+                                                </td>
 
-                                            <td class="product-price" data-title="Price">
-                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>225.00</span>
-                                            </td>
+                                                <td class="product-subtotal" data-title="Total">
+                                                    <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">R</span>@prod.Product.Cost * @prod.Quantity</span>
+                                                </td>
+                                            </tr>
+                                        }
 
-                                            <td class="product-quantity" data-title="Quantity">
-                                                <div class="quantity">
-                                                    <label class="screen-reader-text" for="quantity_5aacdd2f0c77b">Quantity</label>
-                                                    <input type="number" id="quantity_5aacdd2f0c77b" class="input-text qty text" step="1" min="0" max="1494" name="cart[0a65e195cb51418279b6fa8d96847a60][qty]" value="1" title="Qty" size="4" pattern="[0-9]*" inputmode="numeric" aria-labelledby="Aliquam Risus Earings quantity">
-                                                </div>
-                                            </td>
-
-                                            <td class="product-subtotal" data-title="Total">
-                                                <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$</span>225.00</span>
-                                            </td>
-                                        </tr>
 
 
                                         <tr>
                                             <td colspan="6" class="actions">
 
-                                                <div class="coupon">
+                                                <div class="coupon">h
                                                     <label for="coupon_code">Coupon:</label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code"> <input type="submit" class="button" name="apply_coupon" value="Apply coupon">
                                                 </div>
 
